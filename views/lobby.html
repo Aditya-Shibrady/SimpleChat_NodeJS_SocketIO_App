@@ -1,0 +1,49 @@
+<section class = "row">
+
+	<section class= "col-sm-10">
+		<h1 style="color: #606060">Lobby</h1>
+		{{> messenger}}
+	</section>
+
+	<section class= "col-sm-2" style="background-color: #c5d5cb">
+        <center>
+            <br><br>
+		<h3 style="color: #606060">People</h3>
+		<ul class="list-unstyled" id = "people">
+		{{#eachInMap people}}
+			<li id="{{key}}" style="color: #9fa8a3" >{{value.name}}</li>
+		{{/eachInMap}}
+		</ul>
+
+		<hr>
+
+		<h3 style="color: #606060">Rooms</h3>
+		<ul class="list-unstyled" id = "rooms">
+		{{#eachInMap rooms}}
+			<li id="{{key}}" style="color: #9fa8a3; text-decoration: none"><a>{{value.name}}</a></li>
+		{{/eachInMap}}
+		</ul>
+		<!-- Button trigger modal -->
+		<button class="btn btn-xs btn-default" data-toggle="modal" data-target="#myModal">Create Room</button>
+        </center>
+        <br><br><br>
+	</section>
+
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" >
+		<div class="modal-content">
+			<div class="modal-body" style="background-color: #e3e0cf">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<center><h4 class="modal-title" id="myModalLabel" style="color: #606060">Create Room</h4></center>
+                <br>
+				<div class="form-group">
+					<input style="background-color: #c5d5cb" class="form-control" id="room-name" placeholder="Enter a Room Name">
+				</div>
+				<center><button type="button" class="btn btn-xs btn-info" id="create-room" >Create!</button></center>
+			</div>
+		</div>
+	</div>
+</div>

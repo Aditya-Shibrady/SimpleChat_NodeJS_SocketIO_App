@@ -1,0 +1,23 @@
+{
+  "name": "Simple_Chat",
+  "version": "1.0.0",
+  "description": "Multi room simple chat service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aditya Shibrady",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.8.7",
+    "socket.io": "^1.1.0",
+    "hbs": "^2.7.0"
+  },
+  "engines": {
+    "node": "0.10.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Space"
+  }
+}

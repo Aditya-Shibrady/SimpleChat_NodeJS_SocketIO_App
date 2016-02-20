@@ -1,0 +1,24 @@
+
+	<section class = "row">
+
+		<section class= "col-sm-10">
+			<h1 style="color: #606060">{{name}}</h1>
+			{{> messenger}}
+		</section>
+
+		<section class= "col-sm-2" style="background-color: #c5d5cb">
+			<center>
+                <br><br>
+			<h3><span class="label label-info"><a id="back-to-lobby" style="text-decoration: none; color: white">Back to lobby</a></span></h3>
+                <br>
+			<h3 style="color: #606060">People</h3>
+			<ul class="list-unstyled" id = "people">
+			{{#eachInMap people}}
+				<li id="{{key}}" style="color: #9fa8a3">{{value.name}}</li>
+			{{/eachInMap}}
+			</ul>
+                <br><br>
+			</center>
+		</section>
+
+	</section>

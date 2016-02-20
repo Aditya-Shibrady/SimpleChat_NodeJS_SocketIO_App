@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Chat</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body style="background-color: #e3e0cf">
+    <div id="main" class="container">
+      <div class ="row">
+          <br><br><br><br><br>
+      <section class= "col-sm-4 col-sm-offset-4">
+        <form role="form" id="login">
+            <center>
+          <div class="form-group">
+            <label for="username" style="color: #606060 "><h3>Welcome to SimpleChat! <span class="glyphicon glyphicon-phone" aria-hidden=true></span></h3>
+              <h5><small>Made with <span class="glyphicon glyphicon-heart" aria-hidden=true></span> by Aditya Shibrady</small></h5></label>
+              <br><br>
+            <input style="background-color: #c5d5cb" class="form-control" id="username" placeholder="Enter Username">
+          </div>
+          <button type="submit" class="btn btn-default" style="color :#606060 ">Submit</button>
+
+            </center>
+        </form>
+      </section>   
+      </div>   
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="public/js/transitions.js"></script>
+    <script>$('#messages').scrollTop($('.demo')[0].scrollHeight);</script>
+  </body>
+</html>
